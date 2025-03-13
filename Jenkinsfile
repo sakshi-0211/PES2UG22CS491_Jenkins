@@ -14,7 +14,7 @@ pipeline {
             steps {
                 script {
                     sh 'ls -l'  // List files to check if main.cpp exists
-                    sh 'g++ -o PES2UG22CS491 main.cpp'  
+                    sh 'g++ -o PES2UG22CS491 hello.cpp'  
                 }
             }
         }
