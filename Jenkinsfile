@@ -9,12 +9,12 @@ pipeline {
                 }
             }
         }
-        
+
         stage('Build') {
             steps {
                 script {
-                    sh 'ls -l'  // List files to check if main.cpp exists
-                    sh 'g++ -o PES2UG22CS491 hello.cpp'  
+                    sh 'ls -l'  // Check the files present in the workspace
+                    sh 'g++ -o PES2UG22CS491 main/hello.cpp'  // Compile hello.cpp from the main directory
                 }
             }
         }
